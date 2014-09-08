@@ -19,6 +19,6 @@ if (BL.isTablet()) {
 else {
   src = '<img src="' + savedContent.iphone_image_url[0] + '">';
 }
-$('.content-image').append(src)
+$(BL.getIsolatedSelector('.content-image', APP.appId)).append(src)
 //console.log($('.content-image img').attr('src'))
 
